@@ -11,9 +11,27 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-.indexContainer {
+.index-container {
   display: grid;
-  grid-template-rows: 10vh 80vh 100vh 35vh;
+  grid-template-rows: 10vh 80vh 100vh 80vh 80vh 80vh 35vh;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.interview-container {
+  display: grid;
+  grid-template-rows: 10vh 80vh 35vh;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.project-container {
+  display: grid;
+  grid-template-rows: 10vh 80vh 35vh;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.tech-container {
+  display: grid;
+  grid-template-rows: 10vh 80vh 35vh;
   grid-template-columns: repeat(8, 1fr);
 }
 
@@ -38,6 +56,8 @@
   font-size: 5rem;
   font-family: 'Bebas Neue', cursive;
   color: #13244E;
+  text-decoration: none;
+  font-weight: 700;
 
   justify-self: center;
   align-self: center;
@@ -196,11 +216,6 @@
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
 }
-.card:hover {
-  border: none;
-  background-color: #13244E;
-  box-shadow: .5rem .5rem 5rem #A1FCFD;
-}
 
 .card-2 {
   height: 25rem;
@@ -213,11 +228,6 @@
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
-}
-.card-2:hover {
-  border: none;
-  background-color: #fff;
-  box-shadow: .5rem .5rem 5rem #13244E;
 }
 
 .card-img {
@@ -246,13 +256,17 @@
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   text-align: center;
-  align-self: center;
+  padding-top: 1rem;
 }
-.card:hover .name {
-  color: #A1FCFD;
-}
-.card-2:hover .name {
-  color: #13244E;
+
+.student-number {
+  grid-row: 1 / 2;
+  grid-column: 2 / -1;
+  text-align: center;
+  padding-top: 5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: #8892A6;
 }
 
 .intro {
@@ -265,12 +279,7 @@
   font-weight: 400;
   padding: 1rem;
   padding-left: 5.75rem;
-}
-.card:hover .intro {
-  color: #fff;
-}
-.card-2:hover .intro {
-  color: #13244E;
+  margin-top: -6.25rem;
 }
 
 #card-1 {
@@ -293,8 +302,68 @@
   grid-column: 2 / 3;
 }
 
-.footer {
+.ideal-jobs {
   grid-row: 4 / 5;
+  grid-column: 1 / -1;
+
+  margin-top: 5rem;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.tools {
+  grid-row: 5 / 6;
+  grid-column: 1 / -1;
+
+  margin-top: 5rem;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.data {
+  grid-row: 6 / 7;
+  grid-column: 1 / -1;
+
+  margin-top: 5rem;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.content {
+  grid-row: 1 / -1;
+  grid-column: 2 / -2;
+
+  margin-top: 8rem;
+  color: #8892A6;
+  font-size: 1.8rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.interview {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+}
+
+.project {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+}
+
+.technology {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+}
+
+.footer {
+  grid-row: -2 / -1;
   grid-column: 1 / -1;
 
   background-color: #13244E;
