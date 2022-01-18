@@ -6,17 +6,12 @@
 
 .video {
   grid-column: 1 / -1;
-  margin: 1rem auto 15rem auto;
-}
-
-video {
-  border: 5px solid #13244E;
-  border-radius: 1rem;
+  margin-bottom: 8rem;
 }
 
 .taylor {
   position: absolute;
-  top: 100%;
+  top: 84%;
   left: 3%;
 }
 
