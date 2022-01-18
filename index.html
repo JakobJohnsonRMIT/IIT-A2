@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="img/logo.png"/>
     <link rel="stylesheet" href="public/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <title>IIT-A2</title>
+    <title>Team Chronos</title>
   </head>
   <body class="index-container">
     <header class="header">
@@ -28,7 +29,23 @@
               <a href="public/project.html" class="nav-link">Project idea</a>
             </li>
             <li class="nav-item">
-              <a href="public/tech.html" class="nav-link">IT Technologies</a>
+              <a class="nav-link" href="#" id="dropdown">
+                IT technologies
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="public/boards.html">Development boards</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="public/vehicles.html">Autonomous vehicles</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="public/crypto.html">Blockchain & Cryptocurrencies</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="public/robots.html">Robots</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -45,7 +62,7 @@
       <p class="profile">
         This team was put together in response to a request from RMIT University to develop an application that would be able to be a all-in-one time management and personal organisation solution for individuals who seek to minimise their wasted hours and get more done, whilst simultaneously creating real free time.
 
-        According to Greek mythology Chronos is the god of time. The use of Chronos as the name for the project seemed to be appropriate. This team is made up of the following people: 
+        According to Greek mythology Chronos is the god of time. The use of Chronos as the name for the project seemed to be appropriate.
       </p>
       <img class="image m1" src="img/man1.png" alt="" />
       <img class="image m2" src="img/man2.png" alt="" />
@@ -576,5 +593,8 @@
         <li><h4 class="footer-name">Matthew Williams</h4></li>
       </ul>
     </footer>
+
+    <script src="src/index.js"></script>
   </body>
+  
 </html>

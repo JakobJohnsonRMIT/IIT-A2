@@ -1,5 +1,0 @@
-.tech-container {
-  display: grid;
-  grid-template-rows: 10vh 80vh 50vh;
-  grid-template-columns: repeat(8, 1fr);
-}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="../img/logo.png"/>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="interview.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +30,23 @@
               <a href="project.html" class="nav-link">Project idea</a>
             </li>
             <li class="nav-item">
-              <a href="tech.html" class="nav-link">IT Technologies</a>
+              <a class="nav-link" href="#" id="dropdown">
+                IT technologies
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="boards.html">Development boards</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="vehicles.html">Autonomous vehicles</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="crypto.html">Blockchain & Cryptocurrencies</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="robots.html">Robots</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -81,5 +98,7 @@
         <li><h4 class="footer-name">Matthew Williams</h4></li>
       </ul>
     </footer>
+
+    <script src="../src/index.js"></script>
   </body>
 </html>

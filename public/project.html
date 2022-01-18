@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="../img/logo.png"/>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +30,23 @@
               <a href="project.html" class="nav-link">Project idea</a>
             </li>
             <li class="nav-item">
-              <a href="tech.html" class="nav-link">IT Technologies</a>
+              <a class="nav-link" href="#" id="dropdown">
+                IT technologies
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="boards.html">Development boards</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="vehicles.html">Autonomous vehicles</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="crypto.html">Blockchain & Cryptocurrencies</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="robots.html">Robots</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -37,9 +54,70 @@
     </header>
 
     <main class="project">
-      <h2 class="heading">Project Idea</h2>
+      <h2 class="heading"><span class="highlight">Meticulous</span>– Chronos alpha 1 </h2>
+      <h4 class="heading-4">Overview</h4>
+      <p class="tech-content">
+        Team Chronos has been approached by a medium sized business to create a prototype organisation app for their employees; the company was interested in the potential of the project and would like to fund the development of an alpha version. As development continues more features and better UI/UX will be implemented so as to achieve the long term goals of the project.
+      </p>
+      <h4 class="heading-4">Motivation</h4>
+      <p class="tech-content">
+        There is a market opportunity for a brilliant organisation app; while most only offer a simple calendar and to do list as their final product, this will be Chronos’ Alpha. While the original vision is highly functional,polished and complex, the alpha must be simple, effective and functional.
+        <br>
+        <br>
+        Therefore, we must create a solid foundation for a fully featured organisation app, the code must be written efficiently and utilise minimal machine resources whilst also being extensible. A lot of thought must be put in to the development so as to simplify expansion and polishing of the functionality and user experience.
+      </p>
+      <h4 class="heading-4">Description</h4>
+      <p class="tech-content">
+        The alpha application requires two basic features – a calendar and a to do list.The earliest versions of the application will run completely as a command line interface on the desktop, from there modules can be added and expanded without the risk of encountering bugs produced by the web client. 
+        <br>
+        <br>
+        Development of the alpha command line version will stop with an adequately featured calendar and to do listA web client will be produced using HTML5 and CSS and interact with the Python scripts through the use of an API which manipulates the DOM, creating a dynamic GUI.Development of the alpha web client version will stop with a functional and effective GUI and functional integration with the server side scriptsFurther polishing will be required to create a high-quality product, but through creating a solid foundation, further development will be relatively simple as) additional python modules can be added piece by piece and) the user experience can be developed on top of an existing codebase rather than assumptions of functionality.
+      </p>
+      <h4 class="heading-4">Project Research</h4>
+      <p class="tech-content">
+        Who else will want this app? Is there a market similar to the users of Tiimo? Advertising – what channels do we direct our resources to? Costs – servers, development, marketing, leadership, tax, app store fees, royalties (logo, font), licenses (APIs) Development time – time until profit, timeline of versions, when is first sellable version available?
+      </p>
+      <h4 class="heading-4">Tooling</h4>
+      <p class="tech-content">
+        The applet will be written in python for parallel development on desktop and web clients – the platform will be accessible via a desktop running a python client OR a modern web browser equipped with JavaScript/HTML 5/CSS 3. 
+        <br>
+        <br>
+        The web app will run server-side using node.js to run python modules and display the data and UI to the user. Data will be saved locally OR to a web server and a login system will be used to sync user accounts and data together.Python development will take place in a python development environment i.e.VS code or Pycharm.
+        <br>
+        <br>
+        Web development will take place in a web development environment ie DreamWeaver or VS code. A possible tool which can bridge the python to web development is TRANSCRYPT, which converts the python code to JS code for the scripts to interact with the DOM.A web browser to view the app i.e.chrome.
+      </p>
+      <h4 class="heading-4">Skills</h4>
+      <p class="tech-content">
+        UI/UX, good CSS skills, good creativity and artistic skills to make an engaging UIPython – this might need to be rethought, full JS might be better, but for now team members are studying python so will use this skill.
+      </p>
+      <ul class="tech-list">
+        <li class="tech-item">
+          JS – basic knowledge, an interpreter will be used</li>
+        <li class="tech-item">
+          HTML/CSS - the website is the UI and JS interacts with python scripts to manipulate the DOM</li>
+        <li class="tech-item">
+          Marketing – need to build a userbase to bring in revenue,
+        </li>
+        <li class="tech-item">
+          Leadership – management of the developers, decision making, financial management
+        </li>
+      </ul>
+      <h4 class="heading-4">interface ideas</h4>
+      <p class="tech-content">
+        Modern, sleek GUI, vectors, symbols, Rounded corners, gradient colour select boxes, animated symbols, smooth hover/click transitions, gradient colour background, force user to enter correct data type, input boxes alt text
+      </p>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <h1 class="footer-title">Team Chronos</h1>
+      <ul class="footer-list">
+        <li><h4 class="footer-name">Jakob Johnson</h4></li>
+        <li><h4 class="footer-name">Suzette Hefford</h4></li>
+        <li><h4 class="footer-name">Anthony Lloyd</h4></li>
+        <li><h4 class="footer-name">Matthew Williams</h4></li>
+      </ul>
+    </footer>
+    <script src="../src/index.js"></script>
   </body>
 </html>
