@@ -13,7 +13,7 @@
 
 .index-container {
   display: grid;
-  grid-template-rows: 20vh repeat(5, min-content) 50vh;
+  grid-template-rows: 20vh repeat(6, min-content) 50vh;
   grid-template-columns: repeat(8, 1fr);
 }
 
@@ -77,8 +77,13 @@
   color: #13244e;
 }
 
-.team-profile {
+.presentation {
   grid-row: 2 / 3;
+  grid-column: 1 / -1;
+}
+
+.team-profile {
+  grid-row: 3 / 4;
   grid-column: 1 / -1;
 
   display: grid;
@@ -90,7 +95,7 @@
   grid-column: 1 / 2;
 
   position: absolute;
-  top: 25%;
+  top: 125%;
   left: 20%;
 }
 
@@ -98,7 +103,7 @@
   grid-column: 1 / 2;
 
   position: absolute;
-  top: 32%;
+  top: 132%;
   left: 12%;
 }
 
@@ -106,7 +111,7 @@
   grid-column: 1 / 2;
 
   position: absolute;
-  bottom: 30%;
+  bottom: -80%;
   left: 14%;
 }
 
@@ -145,7 +150,7 @@
   grid-column: 3 / 4;
 
   position: absolute;
-  bottom: 22%;
+  bottom: -82%;
   right: 12%;
 }
 
@@ -153,7 +158,7 @@
   grid-column: 3 / 4;
 
   position: absolute;
-  top: 32%;
+  top: 132%;
   right: 12%;
 }
 
@@ -161,12 +166,12 @@
   grid-column: 3 / 4;
 
   position: absolute;
-  top: 57%;
+  top: 157%;
   right: 12%;
 }
 
 .team {
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
 }
 
 .sub-heading {
@@ -288,17 +293,6 @@
 }
 
 .ideal-jobs {
-  grid-row: 4 / 5;
-  grid-column: 1 / -1;
-
-  margin-top: 5rem;
-
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(8, 1fr);
-}
-
-.tools {
   grid-row: 5 / 6;
   grid-column: 1 / -1;
 
@@ -309,8 +303,19 @@
   grid-template-columns: repeat(8, 1fr);
 }
 
-.data {
+.tools {
   grid-row: 6 / 7;
+  grid-column: 1 / -1;
+
+  margin-top: 5rem;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.data {
+  grid-row: 7 / 8;
   grid-column: 1 / -1;
 
   margin-top: 5rem;
